@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+/***Header Styles***/
+
+#header{
+   box-shadow: 0px 2px 3px #333 ;
+}
+.header{
+    width: 85%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+}
+
+.menu{
+    display: flex;
+    padding: 0px;
+}
+
+.menu li{
+    list-style-type: none;
+    padding: 10px 20px;
+}
+
+.menu li a{
+    color: #333;
+}
+
+.menu li:hover{
+    background-color: rgb(238, 155, 217);
+    border-radius: 6px;
+}
+
+
+/****Banner styles****/
+
+.banner img{
+    width: 100%;
+}
+
+.banner{
+    position: relative;
+}
+
+
+.bannerinfo{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    padding: 30px;
+}
+
+
+/****our services section*****/
+
+.section-title{
+    text-align: center;
+    padding: 30px 0px;
+    font-size: 40px;
+    color: darkcyan;
+}
+
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 0px auto;
+}
+.service{
+    flex:30%;
+    padding: 20px;
+    margin: 10px;
+}
+
+.icontitle{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icon i{
+    font-size: 25px;
+    color: darkcyan;
+}
+
+.icon{
+    padding-right:  20px;
+}
+
+/****feature styles****/
+
+
+
+
+
+/***footer styles****/
+
+.footer{
+    background-color:#333;
+    padding: 20px, 0px;
+
+}
+
+.footer p{
+    color: #fff;
+    text-align: center;
+}
+
+/************************************
+            INNER PAGES
+  **************************************/     
+  
+  
+/******about page*******/
+
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 85%;
+    margin: 0% auto;
+}
+
+.abtleft, .abtright{
+    flex: 48%;
+}
+
+.abtleft img{
+    width: 100%;
+}
+
+.abtright{
+    line-height: 30px;
+    margin-left: 20px;
+}
+
+/***contact page****/
+
+.contact p{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 20px;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/*****login page******/
+
+
+.login{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:10px ;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/*****career page*****/
+.career{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+/*****media query section*****/
+
+@media only screen and (max-width:600px){
+    .header, .menu{
+        flex-direction: column;
+
+    }
+    .bannerinfo{
+       display: none;
+    }
+
+    .services, .icontitle{
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px)
+{
+    .header{
+        flex-direction: column;
+    }
+    .bannerinfo{
+        width: 98%;
+    }
+}
+
